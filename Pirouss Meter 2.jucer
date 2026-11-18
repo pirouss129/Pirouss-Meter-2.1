@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="TmLs6J" name="Pirouss Meter 2-1" projectType="audioplug"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1"
+              companyName="Pirouss" pluginFormats="buildStandalone,buildVST3"
+              pluginManufacturerCode="Piro" pluginCode="PM10" pluginVST3Category="Analyzer">
+  <MAINGROUP id="dS4YPF" name="Pirouss Meter 2-1">
+    <GROUP id="{7E99FAB8-A85E-3552-80BC-3DCCE6818FFD}" name="DSP">
+      <GROUP id="{372008F9-8E36-8204-ADF3-54AAFF382CF0}" name="libebur128">
+        <GROUP id="{2FA69587-EBD5-25EB-449F-36CD36B4B324}" name="sys">
+          <FILE id="eHtDuP" name="queue.h" compile="0" resource="0" file="Source/DSP/libebur128/sys/queue.h"/>
+        </GROUP>
+        <FILE id="jzhgem" name="ebur128.c" compile="1" resource="0" file="Source/DSP/libebur128/ebur128.c"/>
+        <FILE id="yFsrb8" name="ebur128.h" compile="0" resource="0" file="Source/DSP/libebur128/ebur128.h"/>
+        <FILE id="JYh6XT" name="EbuR128Wrapper.h" compile="0" resource="0"
+              file="Source/DSP/libebur128/EbuR128Wrapper.h"/>
+      </GROUP>
+      <FILE id="mXcjjl" name="PPMDsp.cpp" compile="1" resource="0" file="Source/DSP/PPMDsp.cpp"/>
+      <FILE id="AWMYUT" name="PPMDsp.h" compile="0" resource="0" file="Source/DSP/PPMDsp.h"/>
+      <FILE id="EHWgfE" name="RMSDsp.cpp" compile="1" resource="0" file="Source/DSP/RMSDsp.cpp"/>
+      <FILE id="FLidOz" name="RMSDsp.h" compile="0" resource="0" file="Source/DSP/RMSDsp.h"/>
+      <FILE id="NMfxUY" name="TPDsp.cpp" compile="1" resource="0" file="Source/DSP/TPDsp.cpp"/>
+      <FILE id="TS4BvT" name="TPDsp.h" compile="0" resource="0" file="Source/DSP/TPDsp.h"/>
+    </GROUP>
+    <GROUP id="{0C82F65A-D5F0-0899-DEFF-02DAB64E8BDF}" name="Source">
+      <FILE id="BNDLmP" name="juce_logo.png" compile="0" resource="1" file="Source/juce_logo.png"/>
+      <FILE id="FDXypR" name="pirouss-meter-2.png" compile="0" resource="1"
+            file="Source/pirouss-meter-2.png"/>
+      <FILE id="RJKrWv" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="zlsj3L" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="cVryQL" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="XvSOHT" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+    <GROUP id="{0D2B162C-404B-7F4C-8ACE-1C6A185BAF6C}" name="UI">
+      <GROUP id="{EC815FF7-94C3-979A-45CB-280FDB4977DB}" name="Bargraph">
+        <FILE id="NOUGIe" name="DigitalDisplay.cpp" compile="1" resource="0"
+              file="Source/UI/Bargraph/DigitalDisplay.cpp"/>
+        <FILE id="t4FgAW" name="DigitalDisplay.h" compile="0" resource="0"
+              file="Source/UI/Bargraph/DigitalDisplay.h"/>
+        <FILE id="wkn0J6" name="LUBargraph.cpp" compile="1" resource="0" file="Source/UI/Bargraph/LUBargraph.cpp"/>
+        <FILE id="vrJa7Y" name="LUBargraph.h" compile="0" resource="0" file="Source/UI/Bargraph/LUBargraph.h"/>
+        <FILE id="UDG9V3" name="RM3Bargraph.cpp" compile="1" resource="0" file="Source/UI/Bargraph/RM3Bargraph.cpp"/>
+        <FILE id="b6IIXO" name="RM3Bargraph.h" compile="0" resource="0" file="Source/UI/Bargraph/RM3Bargraph.h"/>
+        <FILE id="qs2kJI" name="RTW40Bargraph.cpp" compile="1" resource="0"
+              file="Source/UI/Bargraph/RTW40Bargraph.cpp"/>
+        <FILE id="bsx8IP" name="RTW40Bargraph.h" compile="0" resource="0" file="Source/UI/Bargraph/RTW40Bargraph.h"/>
+      </GROUP>
+      <GROUP id="{533818FB-1A9B-EBFA-7659-1A2D8681FCAD}" name="Buttons">
+        <FILE id="aRDoQ3" name="KCalibSlider.h" compile="0" resource="0" file="Source/UI/Buttons/KCalibSlider.h"/>
+        <FILE id="foGD5r" name="KSwitch.h" compile="0" resource="0" file="Source/UI/Buttons/KSwitch.h"/>
+        <FILE id="LVf3Ig" name="LuCalibSlider.h" compile="0" resource="0" file="Source/UI/Buttons/LuCalibSlider.h"/>
+        <FILE id="Is6rZQ" name="LuSwitch.h" compile="0" resource="0" file="Source/UI/Buttons/LuSwitch.h"/>
+      </GROUP>
+      <GROUP id="{83C97011-4A82-27AA-5902-5CFD5245DE3A}" name="header">
+        <FILE id="xL28gy" name="PiroussHeader.cpp" compile="1" resource="0"
+              file="Source/UI/header/PiroussHeader.cpp"/>
+        <FILE id="KvrmR1" name="PiroussHeader.h" compile="0" resource="0" file="Source/UI/header/PiroussHeader.h"/>
+      </GROUP>
+      <FILE id="X4VY9Z" name="SectionPanel.h" compile="0" resource="0" file="Source/UI/SectionPanel.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_analytics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2026 targetFolder="Builds/VisualStudio2026" smallIcon="FDXypR" bigIcon="FDXypR">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="D Pirouss Meter 2-1 v1-0"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Pirouss Meter 2-1" useRuntimeLibDLL="0"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_analytics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2026>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
